@@ -1,0 +1,90 @@
+
+.drag{
+    cursor: grab;
+}
+.bg{
+    background-image: url('https://cdn.pixabay.com/photo/2014/03/30/09/44/cherry-blossoms-301253_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+@media (max-width: 768px) { 
+    #signUpCard{
+        border: 0px !important;
+        border-top: 2px solid var(--bs-dark) !important;
+    }
+    .signUpInput, .signInInput{
+        padding: 0px !important;
+    }
+ }
+ #btnDeleteBoard{
+    position: fixed;
+    right: 5px;
+    bottom: 140px;
+    z-index: 1001;
+}
+#btnEditBoard{
+    position: fixed;
+    right: 5px;
+    bottom: 80px;
+    z-index: 1001;
+}
+#btnNewBoard{
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    z-index: 1001;
+}
+#btnDeleteTask{
+    position: fixed;
+    right: 5px;
+    bottom: 140px;
+    z-index: 1001;
+}
+#btnEditTask{
+    position: fixed;
+    right: 5px;
+    bottom: 80px;
+    z-index: 1001;
+}
+#btnNewTask{
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    z-index: 1001;
+}
+#alerts{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index:1002;
+}
+#contenedor_carga{
+    background-color: var(--bs-blue);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+}
+#carga{
+    border:10px solid white;
+    border-top-color: var(--bs-green);
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin:auto;
+    -webkit-animation: girar 0.8s linear infinite;
+    -o-animation: girar 0.8s linear infinite;
+    animation: girar 0.8s linear infinite;
+}
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
